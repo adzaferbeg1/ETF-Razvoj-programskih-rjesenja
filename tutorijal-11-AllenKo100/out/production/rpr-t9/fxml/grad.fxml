@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@/css/validacija.css" />
+   </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="%grad.naziv" />
+      <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" />
+      <Label text="%broj.stanovnika" GridPane.rowIndex="1" />
+      <TextField fx:id="fieldBrojStanovnika" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="%grad.drzava" GridPane.rowIndex="2" />
+      <ChoiceBox fx:id="choiceDrzava" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <buttons>
+            <Button fx:id="btnSlikaPromijeni" mnemonicParsing="false" onAction="#slikaAction" text="Promijeni" />
+            <Button fx:id="btnOk" mnemonicParsing="false" onAction="#clickOk" text="Ok" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#clickCancel" text="Cancel" />
+         </buttons>
+      </ButtonBar>
+      <ImageView fx:id="viewSlika" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+      <Label text="Postanski broj" GridPane.rowIndex="3" />
+      <TextField fx:id="fieldPostanskiBroj" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+   <opaqueInsets>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
