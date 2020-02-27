@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+
+        <Button fx:id="btn3"  onAction="#three" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+        <Button fx:id="btn5" onAction="#five" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Button fx:id="minusBtn" onAction="#minus" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+        <Button fx:id="divideBtn" onAction="#divide" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Button fx:id="btn4" onAction="#four" text="4" GridPane.rowIndex="3" />
+
+        <Button fx:id="btn8" onAction="#eight" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Button fx:id="plusBtn" onAction="#plus" maxHeight="Infinity" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+
+        <Button fx:id="btn2" onAction="#two" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Button fx:id="modBtn" onAction="#mod" mnemonicParsing="false" text="\%" GridPane.rowIndex="1" />
+
+        <Label fx:id="display" text="${controller.resProp}" GridPane.columnSpan="4" />
+
+        <Button fx:id="btn0" text="0" onAction="#zero" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+
+        <Button fx:id="btn1" text="1" onAction="#one" GridPane.rowIndex="4" />
+
+        <Button fx:id="btn9" text="9" onAction="#nine" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+        <Button fx:id="btn7" text="7" onAction="#seven" GridPane.rowIndex="2" />
+
+        <Button fx:id="btn6" text="6" onAction="#six" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+        <Button fx:id="equalsBtn" onAction="#equals" maxHeight="Infinity" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+
+        <Button fx:id="timesBtn" onAction="#times" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+        <Button fx:id="dotBtn" onAction="#dot" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+    </children>
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+</GridPane>
